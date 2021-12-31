@@ -52,4 +52,22 @@ MB files if you like in which you remember to change the filename of the output 
 file in every iteration to not overwrite it.
 
 
+root to hdf5 pd tables:
+use save_hdf_clean.ipynb. Correct all paths so they point to your file and make an output
+name that makes sense. Read the comments to find out what functions you need to run.
+
+
+Add quick load truth:
+FILE NOT ADDED
+
+CNN:
+Correct file names and paths to fit your data. Run initial, functions and run one of the
+networks with the following functions down to training.
+
+If you wish to train a model run stuff under training.
+
+If you wish to load and test a model run stuff under road count and combination count.
+TRAINED MODEL NOT YET ADDED.
+
+
 
