@@ -67,7 +67,7 @@ networks with the following functions down to training.
 If you wish to train a model run stuff under training.
 
 If you wish to load and test a model run stuff under road count and combination count.
-TRAINED MODEL NOT YET ADDED.
-
+Load either the single layer or the two layer model and remember that the network and
+the loaded model must match.
 
 
