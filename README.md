@@ -58,7 +58,8 @@ name that makes sense. Read the comments to find out what functions you need to 
 
 
 Add quick load truth:
-FILE NOT ADDED
+You need to do this if you download new data from lxplus. Open Save_quick_load_truth.ipynb 
+and run all. Remember to change all paths.
 
 CNN:
 Correct file names and paths to fit your data. Run initial, functions and run one of the
