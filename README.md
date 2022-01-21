@@ -15,6 +15,7 @@ it more problematic to produce in hardware. If you want it hardware programmable
 for a taylor approximation n see how it goes.
 
 
+
 Data extraction.
 
 Follow Rileys instructions. If luck favours you, you can just insert the files
