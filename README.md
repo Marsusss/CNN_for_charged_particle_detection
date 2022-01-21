@@ -1,9 +1,11 @@
 Improvements to be made:
 
-You should deffinatly utilize that the math is symmetric under simultaneous charge and pT inversion.
+You should deffinatly utilize that the math is symmetric under simultaneous charge and phi0 inversion.
 That means each image could be split in two (with a slight overlap). This would ease the training
 and reduce the effect of bending lines for low pT. This modification should prolly be done
-in the notebook.
+in the notebook. Edit: I implemented a "get_smart_image" function for this in the CNN. You can use that.
+You still need to edit other places to make sure that the new number of events and size of the qOpT
+dimension fits other places.
 
 In the data extraction you could change the calculations in HTTHoughTransformTool.cxx
 so that the x-axis involves sin(phi0 - phi) or whatever the exact math was. The idea is
