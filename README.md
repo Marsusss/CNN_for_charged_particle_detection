@@ -8,11 +8,13 @@ You still need to edit other places to make sure that the new number of events a
 dimension fits other places.
 
 In the data extraction you could change the calculations in HTTHoughTransformTool.cxx
-so that the x-axis involves sin(phi0 - phii) or whatever the exact math was. The idea is
-that this will force the lines to become linear, which is actually an inherent assumption
-in using the CNN for the problem. This should improve the precission at the cost of making
-it more problematic to produce in hardware. If you want it hardware programmable, prolly go
-for a taylor approximation n see how it goes.
+so that the y-axis involves asin(q/pT) or whatever the exact math was. After thinking
+long and hard I decided we prolly can't add the sine to the x-axis, i.e. sin(phi0 - phii)
+as phii (along with ri) is what seperates them. You'd just get a lot of lines on top of each
+other I think. The idea is that this will force the lines to become linear, which is
+actually an inherent assumption in using the CNN for the problem. This should improve the
+precission at the cost of making it more problematic to produce in hardware. If you want it
+hardware programmable, prolly go for a taylor approximation n see how it goes.
 
 I used a modfied version of the CAM-method to show what patterns the network was looking for.
 This could have been done better by modifying the current final layer to mapping to more
