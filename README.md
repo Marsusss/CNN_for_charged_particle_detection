@@ -8,11 +8,19 @@ You still need to edit other places to make sure that the new number of events a
 dimension fits other places.
 
 In the data extraction you could change the calculations in HTTHoughTransformTool.cxx
-so that the x-axis involves sin(phi0 - phi) or whatever the exact math was. The idea is
+so that the x-axis involves sin(phi0 - phii) or whatever the exact math was. The idea is
 that this will force the lines to become linear, which is actually an inherent assumption
 in using the CNN for the problem. This should improve the precission at the cost of making
 it more problematic to produce in hardware. If you want it hardware programmable, prolly go
 for a taylor approximation n see how it goes.
+
+I used a modfied version of the CAM-method to show what patterns the network was looking for.
+This could have been done better by modifying the current final layer to mapping to more
+channels than 2 and then making the two output channels a mean of these. Then you can modify
+the current method to taking the channels before the averaging out. See 
+http://cnnlocalization.csail.mit.edu/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf and my
+thesis or ask me. This is a great way to illustrate the effect of a CNN so would be great
+for your presentation.
 
 
 
