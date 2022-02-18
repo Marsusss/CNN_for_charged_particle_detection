@@ -77,7 +77,7 @@ CNN:
 Correct file names and paths to fit your data. Run initial, functions and run one of the
 networks with the following functions down to training.
 
-If you wish to train a model run stuff under training.
+If you wish to train a model run stuff under training. You sould notice that the training algorithm will continue pratically forever, you should stop it sometime when it seems to have converged. (Which is a very long time unless you have a very powerfull gpu).
 
 If you wish to load and test a model run stuff under road count and combination count.
 Load either the single layer or the two layer model and remember that the network and
