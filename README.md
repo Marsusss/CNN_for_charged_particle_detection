@@ -1,3 +1,18 @@
+Used versions of programs and packages:
+
+Windows 10.0.19043
+
+cudnn-10.0-windows10-x64-v7.6.5.32
+
+Python 3.8.3
+
+Pytorch 1.6.0
+
+Matplotlib 3.2.2
+
+Awkward 1.2.3
+
+
 Improvements to be made:
 
 You should deffinatly utilize that the math is symmetric under simultaneous charge and phi0 inversion. (Except for the constant shift inside the equation I suppose, but that doesn't matter for this execise, that'd be up to someone else to make sure we get the right coordinates out for both positive and negative charge, just state that it obvious that we can as long as we remember which ones we inverted. This is also only unproblematic for our exercise because it is an inherent assumption in our model (the CNN) that the images can be interpreted equally everywhere, which is admitedly only halfway true for low pT's due to the sine, see next paragraph. But all the same, we allready assumed it, so it shouldn't hurt the model efficiency I think and has all the advantages listed below.)
@@ -77,7 +92,7 @@ CNN:
 Correct file names and paths to fit your data. Run initial, functions and run one of the
 networks with the following functions down to training.
 
-If you wish to train a model run stuff under training.
+If you wish to train a model run stuff under training. You sould notice that the training algorithm will continue pratically forever, you should stop it sometime when it seems to have converged. (Which is a very long time unless you have a very powerfull gpu).
 
 If you wish to load and test a model run stuff under road count and combination count.
 Load either the single layer or the two layer model and remember that the network and
